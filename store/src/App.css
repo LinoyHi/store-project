@@ -13,15 +13,30 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  padding-top: 2vw;
   display: flex;
-  flex-direction: column;
+}
+
+.card{
+  width: 20vw;
+}
+.footer{
+  background-image: linear-gradient(brown,brown,orange,yellow,orange,brown,brown);
+}
+
+.App-header {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  position: fixed;
+  z-index: 1;
+  width: 98vw;
+  border-radius: 30px;
+  display: flex;
+  background-image: linear-gradient(30deg,black,rgb(198, 182, 101),black,rgb(198, 182, 101),black,rgb(198, 182, 101));
+  border-bottom: 0.3vw solid black;
 }
 
 .App-link {
@@ -35,4 +50,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.row{
+  justify-content: space-around;
+}
+
+header>img{
+  margin-left: 1.5vw;
+  margin-bottom: 1vw;
+  margin-right: auto;
+  cursor: pointer;
+}
+header>input{
+  width: 20vw;
+  height: 2.5vw;
+  margin: auto 0px auto auto;
+}
+.signIn{
+  background-image: url('https://img.icons8.com/external-flaticons-flat-flat-icons/2x/external-sign-in-gaming-ecommerce-flaticons-flat-flat-icons-2.png');
+}
+.personal{
+  background-image: url('https://img.icons8.com/clouds/2x/standing-man.png');
+}
+.Home, .cart ,header>img, .signIn, .personal{
+  border-radius: 30px;
+  margin-top: 1vw;
+  width: 8vw;
+  height: 8vw;
+  background-color: black;
+}
+.search, .filter{
+  height: 2.7vw;
+  width: 2.5vw;
+  border-radius: 2px;
+  border: 1px solid black;
+  background-color: aliceblue;
+  cursor: pointer;
+  margin: auto auto auto 0;
+}
+.Home, .cart, .signIn, .personal{
+  text-align: center;
+  font-size: 2vw;
+  color: bisque;
+  text-shadow: 1px 1px 6px black;
+  background-size: cover;
+  cursor: pointer;
+  border-color: aliceblue;
+  margin:auto;
+}
+.cart, .Home{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCx3AWXDLIVCbAxLtSplwmlYIH-2FgkYfpcfYc2FICkR8qgAc2QFa&usqp=CAE&s');
+  margin-right: 1.5vw;
+}
+.itemsCenter{
+  padding-top: 10vw;
 }
