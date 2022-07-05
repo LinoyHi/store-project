@@ -31,7 +31,7 @@ function ItemLi(props) {
                 <p className='out'>out of stock</p>
             </div>
             <div className='card-body'>
-                <h3>{props.name}</h3>
+                <h5>{props.name}</h5>
                 <p>price:{props.price}</p>
                 <p>in stock: {props.inven}</p>
             </div>
