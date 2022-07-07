@@ -28,6 +28,7 @@ ul{
 }
 
 .card{
+  margin-top: 1vw;
   width: 20vw;
   height: 25vw;
   background-image: linear-gradient(130deg,rgb(90, 46, 46),rgb(207, 203, 181),rgb(159, 79, 79),rgb(207, 203, 181),rgb(90, 46, 46));
@@ -146,7 +147,7 @@ header>input{
   margin-right: 1.5vw;
 }
 .itemsCenter{
-  padding-top: 10vw;
+  padding-top: 8.5vw;
 }
 .w-100{
   width: 10vw;

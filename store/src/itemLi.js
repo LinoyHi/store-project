@@ -26,6 +26,7 @@ function ItemLi(props) {
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+                <button className='add-to-cart'>♥</button>
             </div>
             <div className='card-body'>
                 <h5>{props.name}</h5>
