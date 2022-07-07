@@ -72,10 +72,6 @@ ul {
 }
 
 .App-header {
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
   position: fixed;
   z-index: 10000;
   width: 98vw;
@@ -125,16 +121,17 @@ header>input {
   background-image: url('https://img.icons8.com/clouds/2x/standing-man.png');
 }
 
-.Home,
+.home,
 .cart,
-header>img,
 .signIn,
 .personal {
   border-radius: 30px;
   margin-top: 1vw;
-  width: 8vw;
-  height: 8vw;
+  width: 4vw;
+  height: 4vw;
   background-color: black;
+  margin-left: 5px;
+  margin-right: 0px;
 }
 
 .search,
@@ -153,19 +150,16 @@ header>img,
 .signIn,
 .personal {
   text-align: center;
-  font-size: 2vw;
-  color: bisque;
-  text-shadow: 1px 1px 6px black;
+  color: white;
+  text-shadow: 1px 1px 6px darkred;
   background-size: cover;
   cursor: pointer;
   border-color: aliceblue;
   margin: auto;
 }
 
-.cart,
-.Home {
+.cart {
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCx3AWXDLIVCbAxLtSplwmlYIH-2FgkYfpcfYc2FICkR8qgAc2QFa&usqp=CAE&s');
-  margin-right: 1.5vw;
 }
 
 .itemsCenter {
