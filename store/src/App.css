@@ -26,13 +26,36 @@ ul{
   background-image: linear-gradient(brown,brown,orange,yellow,orange,brown,brown);
 }
 
+.add-to-cart{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 2.5vw;
+  display: flex;
+}
+
+.addToCart{
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCx3AWXDLIVCbAxLtSplwmlYIH-2FgkYfpcfYc2FICkR8qgAc2QFa&usqp=CAE&s');
+  margin-right: 10.2vw;
+  width: 5vw;
+  height: 5vw;
+  color: white;
+  text-shadow: 1px 1px 3px purple;
+  border-radius: 5px;
+}
+
+.add-to-cart input{
+  width: 3vw;
+}
+
 .App-header {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
   position: fixed;
-  z-index: 1;
+  z-index: 10000;
   width: 98vw;
   border-radius: 30px;
   display: flex;
