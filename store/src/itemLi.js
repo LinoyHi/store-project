@@ -17,7 +17,7 @@ function ItemLi(props) {
                     <button name='addToCart' className='addToCart'>add to cart</button>
                     <input name={`amount${props.name}`} type='number' defaultValue='1' min='1' max={props.inven}></input>
                 </div>
-                    <p className='out'>out of stock</p>
+                    <span className='out'>out of stock</span>
                 <button className="carousel-control-prev" type="button" data-bs-target={`#${props.name}carusel`} data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>
@@ -29,7 +29,7 @@ function ItemLi(props) {
             </div>
             <div className='card-body'>
                 <h5>{props.name}</h5>
-                <p>price:{props.price}</p>
+                <p>price: {props.price}</p>
                 <p>in stock: {props.inven}</p>
             </div>
         </li>
