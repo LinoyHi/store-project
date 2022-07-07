@@ -52,6 +52,7 @@ ul{
   display: flex;
 }
 
+
 .addToCart{
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrCx3AWXDLIVCbAxLtSplwmlYIH-2FgkYfpcfYc2FICkR8qgAc2QFa&usqp=CAE&s');
   background-size: cover;
@@ -153,4 +154,19 @@ header>input{
   width: 10vw;
   height: 15vw;
   border-radius: 3vw;
-}
+  }
+
+  
+  .wishlist{
+    font-size: larger;
+    margin-top: 13vw;
+    border-radius: 40px;
+    height: 2.5vw;
+    width: 2.5vw;
+    padding-left: 9px;
+  }
+  
+  .wishlist:hover{
+    color:rgb(172, 14, 14);
+    border-color: rgb(189, 21, 21);
+  }
