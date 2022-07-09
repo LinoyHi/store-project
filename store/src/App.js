@@ -11,7 +11,7 @@ function App() {
       <Navbar></Navbar>
       <main className='itemsCenter'>
         <ul className='row'>
-          {data.map((item, index) => <ItemLi key={index} name={item.name} imgs={item.imgs} price={item.price} inven={item.inventory}></ItemLi>)}
+          {data.map((item, index) => <ItemLi key={index} name={item.name} id={item.id} imgs={item.imgs} price={item.price} inven={item.inventory}></ItemLi>)}
         </ul>
       </main>
       <footer className='footer'>

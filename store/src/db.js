@@ -1,6 +1,7 @@
 const items = [
     {
-        name: 'leopardShoe',
+        id: 'leopardShoe',
+        name: 'Leopard Shoes',
         imgs: [
             {
                 src: 'https://cdn.shopify.com/s/files/1/0642/9637/products/allie-s_oat_cheet_double_band_cheetah_animal_print_slip_on_sandal_summer_sandals_3_1600x.jpeg?v=1571271751',
@@ -22,7 +23,8 @@ const items = [
         price: 50, inventory: 10, review: {}
     },
     {
-        name: 'bearAndDrinkSweather',
+        id: 'bearAndDrinkSweather',
+        name: 'Bear And Drink Sweather',
         imgs: [
             {
                 src: 'https://styburch.com/wp-content/uploads/2021/08/harajuku-cute-bear-hoodie-cosmiquestudio-aesthetic-outfits-7.jpg',
@@ -48,7 +50,8 @@ const items = [
         price: 60, inventory: 20, review: {}
     },
     {
-        name: 'mushroomFrogSweather',
+        id: 'mushroomFrogSweather',
+        name: 'Mushroom Frog Sweather',
         imgs: [
             {
                 src: 'https://m.media-amazon.com/images/I/818a8T4aGsL._AC_SX679._SX._UX._SY._UY_.jpg',
@@ -74,7 +77,8 @@ const items = [
         price: 35, inventory: 300, review: {}
     },
     {
-        name: 'strawberryDress',
+        id: 'strawberryDress',
+        name: 'Strawberry Dress',
         imgs: [
             {
                 src: 'https://ae05.alicdn.com/kf/H85fe10b031e94bc2bbd84fdeab7fb5cdV/Strawberry-dress-Sequined-Embroidery-Cascading-Ruffle-Maxi-Dress-Women-summer-V-neck-Puff-Sleeve-Bow-Pink.jpg',
@@ -100,7 +104,8 @@ const items = [
         price: 55, inventory: 43, review: {}
     },
     {
-        name: 'bearSweather',
+        id: 'bearSweather',
+        name: 'Bear Sweather',
         imgs: [
             {
                 src: 'https://kawaiitherapy.com/wp-content/uploads/2020/11/36408-bneppx.jpg',
@@ -130,7 +135,8 @@ const items = [
         price: 70, inventory: 5, review: {}
     },
     {
-        name: 'catShoe',
+        id: 'catShoe',
+        name: 'Cat Shoes',
         imgs: [
             {
                 src: 'https://cdn.shopify.com/s/files/1/2417/6849/products/meow-runners-pink-cats-4-cat-shoes-footwear-kitten-kittens-ddlg-playground_190_250x.jpg?v=1571610629',
@@ -152,7 +158,8 @@ const items = [
         price: 80, inventory: 78, review: {}
     },
     {
-        name: 'sheepSweather',
+        id: 'sheepSweather',
+        name: 'Sheep Sweather',
         imgs: [
             {
                 src: 'https://litb-cgis.rightinthebox.com/images/640x853/202108/bps/product/inc/jtdyir1629083569410.jpg?fmt=webp&v=1',
@@ -178,7 +185,8 @@ const items = [
         price: 25, inventory: 17, review: {}
     },
     {
-        name: 'sleepingCatSweather',
+        id: 'sleepingCatSweather',
+        name: 'Sleeping Cat Sweather',
         imgs: [
             {
                 src: 'https://res.cloudinary.com/webstore/image/fetch/w_450,c_limit,c_fit,f_auto,e_trim/http%3A%2F%2Fimages.kent2015.com%2Fimages%2F17%2F10%2Fv%2F36295%2F1.jpg',
