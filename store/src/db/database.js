@@ -2,7 +2,7 @@ export const db = {
     username: { id: 0, 
         placeholder: 'Enter Username', 
         label: 'Username', iconName: 'person-fill', 
-        validations: { require: true, minLen: 5, chars: / [1-100] / }, 
+        validations: { require: true, minLen: 5, numbers: / [1-100] / }, 
         eror: '', 
         type: 'text', 
         options: [], 

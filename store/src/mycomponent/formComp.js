@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import 'react-bootstrap';
 import FormRowComp from './FormRowComp';
+import { validate } from '../common/validations';
 
 
 function Formcomp(props) {
@@ -26,40 +27,28 @@ function Formcomp(props) {
             allFormGroups.push(obj)
         }
     }
-    const [ishide, setishide] = useState(allFormGroups.map(() => false))
-
+    const [data,setdata]=useState(allFormGroups)
     const [inputs, setinputs] = useState(allFormGroups.map(() => ''))
 
     const handleSubmit = (event) => {
         event.preventDefault();
         event.stopPropagation();
         for (const obj of allFormGroups) {
-            inputCheck(obj, obj.id)
+            console.log(obj)
+            inputCheck(obj)
         }
     };
     function check(index, e) {
         if (allFormGroups[index].validations.require) {
             inputs[index] = e.target.value
             setinputs([...inputs])
-            inputCheck(allFormGroups[index], index)
+            inputCheck(allFormGroups[index])
         }
     }
 
     function inputCheck(obj) {
-        if (obj.validations.require) {
-            if (inputs[obj.id].length === 0) {
-                obj.eror = `${obj.label} is required`
-                ishide[obj.id] = true
-            }
-            else if ((obj.validations.minLen || obj.validations.chars) && (obj.validations.minLen ? inputs[obj.id].length < obj.validations.minLen : ((!obj.validations.chars.test(inputs[obj.id]))))) {
-                obj.eror = `${obj.label} must ${obj.validations.minLen ? `be include more than ${obj.validations.minLen} letters` : `include letters '@' and '.'`}`
-                ishide[obj.id] = true
-            }
-            else {
-                ishide[obj.id] = false
-            }
-            setishide([...ishide])
-        }
+        data[obj.id].eror= validate(inputs[obj.id],obj.validations,obj.label)
+        setdata([...data])
     }
 
     function changebutton(e, index) {
@@ -67,16 +56,12 @@ function Formcomp(props) {
         setinputs([...inputs])
         e.target.parentElement.getElementsByClassName('choosen')[0]?.classList.remove('choosen')
         e.target.classList.add('choosen')
-        ishide[index] = false
-        setishide([...ishide])
     }
 
     function hideOptionEror(e, index) {
         if (e.target.value) {
             inputs[index] = true
             setinputs([...inputs])
-            ishide[index] = false
-            setishide([...ishide])
         }
     }
 
@@ -84,7 +69,7 @@ function Formcomp(props) {
         <div className='formdivcss'>
             <h1 style={{textAlign: 'center'}}>{props.formTitle}</h1>
             <Form noValidate onSubmit={handleSubmit} className='formcss'>
-                {props.group.map((arr, index) => <FormRowComp key={index} group={arr} onblur={check} changeButton={changebutton} optioneror={hideOptionEror} state={ishide} ></FormRowComp>)}
+                {props.group.map((arr, index) => <FormRowComp key={index} group={arr} onblur={check} changeButton={changebutton} optioneror={hideOptionEror} ></FormRowComp>)}
                 <Row>
                     <Button type="submit">{props.submitName ? props.submitName : 'Submit form'}</Button>
                 </Row>

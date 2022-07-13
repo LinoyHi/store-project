@@ -1,6 +1,6 @@
 function ErorMessage(props) {
     return (
-        <span className={props.state[props.id] ? 'show' : 'hide'}>
+        <span className='show'>
             {props.eror}
         </span>
     )
