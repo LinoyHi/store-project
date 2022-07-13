@@ -1,7 +1,6 @@
 import CarouselItem from "./caruselItem"
 
 function ItemLi(props) {
-
     return (
         <li id={props.id} className='col-3'>
             <div className='card'>

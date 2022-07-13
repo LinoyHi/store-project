@@ -4,6 +4,45 @@ body {
   text-shadow: 1px 1px 3px black;
 }
 
+.hide{
+  display: none;
+}
+
+.show{
+  display: inline;
+  color:red
+}
+
+.choicesbuttons{
+  background-color: rgba(109, 177, 211, 0.3);
+  border-color: rgba(109, 255, 211, 0.3);
+  color: black;
+}
+
+.choosen{
+  background-color: blue;
+  color: white;
+}
+
+.formcss{
+  border-top: 1px solid;
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.formdivcss{
+  background-color: rgba(109, 255, 211, 0.5);
+  color: darkgreen;
+  border: 1px solid rgb(96, 250, 199);
+  margin: auto;
+  padding: 0.5vw;
+  border-radius: 2px;
+  margin-top: 1vw;
+  width: 98%;
+  text-shadow: 1px 1px 3px white;
+}
+
 .App {
   text-align: center;
 }
